@@ -1,0 +1,236 @@
+<!Doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/first_projec.css">
+    <link rel="icon" href="/images/Иконка_сайта.png">
+</head>
+
+<body>
+
+    <div id="header">
+        МЕТОДИЧЕСКИЙ МАТЕРИАЛ ПО HTML И CSS
+    </div>
+    <!-- <div class="side_panel">
+        <p id="header_of_side_panel">Содержание</p>
+        <div id="hover_bait">↓ Содержание ↓</div>
+        <a href="#Теги" class="button">Теги</a><br>
+        <a href="#Атрибуты" class="button">Атрибуты</a><br>
+        <a href="#СТИЛИ CSS" class="button">Стили</a><br> -->
+        <!-- <button class="button">Button</button><br>
+        <button class="button">Button</button><br>
+        <button class="button">Button</button><br>
+        <button class="button">Button</button><br>
+        <button class="button">Button</button><br>
+        <button class="button">Button</button><br>
+        <button class="button">Button</button><br>
+        <button class="button">Button</button><br>
+        <button class="button">Button</button><br>
+        <button class="button">Button</button><br>
+        <button class="button">Button</button><br>
+        <button class="button">Button</button><br>
+        <button class="button">Button</button><br>
+        <button class="button">Button</button><br>
+        <button class="button">Button</button><br>
+        <button class="button">Button</button><br>
+        <button class="button">Button</button><br> -->
+    <!-- </div> -->
+
+    <div id="buttonPanel">
+        <a id="userPanel" class="registration_button"><img id="userImg" alt=""></a>
+        <a href="registration.html" class="registration_button" target="_self">Регистрация</a>
+        <a href="join.html" class="join_button" target="_self">Войти</a>
+        <a href="#Вопросы_ко_мне" class="registration_button">Задать вопрос</a>
+    </div>
+
+    <!-- <a id="userAccountPanel">
+        <h3></h3>
+    </a> -->
+
+    <!-- <div id="registration_panel">
+        <a href="registration.html" class="registration_button" target="_self">Регистрация</a><br>
+        <a href="join.html" class="join_button" target="_self">Войти</a>
+        <a href="#Вопросы_ко_мне" class="registration_button">Задать вопрос</a><br>
+    </div> -->
+
+    <div id="main_block">
+        <!--СОДЕРЖАНИЕ!-->
+        <h1 class="big_words">
+            <div>СОДЕРЖАНИЕ:</div>
+        </h1>
+        <h3><a href="#Теги" class="soder">1) Теги</a></h3>
+        <h3><a href="#Атрибуты" class="soder">2) Атрибуты</a></h3>
+        <h3><a href="#СТИЛИ CSS" class="soder">3) СТИЛИ CSS</a></h3>
+        <hr>
+
+        <!--ТЕГИ!-->
+        <a name="Теги"></a>
+        <h1 class="big_words">ТЕГИ:</h1>
+        <p class="simple_text">1) <span><big>html</big></span> - Основной тег html</p>
+        <p>2) <span><big>head</big></span> - Шапка сайта, служащая для описания страницы сайта. Находящееся в этом теге
+            <b>не видно</b> конечному пользователю, за исключением названия страницы, если вы его указываете</p>
+        <p>3) <span><big>title</big></span> - Тег, указывающий название страницы (пишется внутри тега head)
+        <p>3) <span><big>title</big></span> - Тег, указывающий название страницы (пишется внутри тега head)
+        <p>4) <span><big>meta</big></span> - Тег, позволяющий устанавливать различные мета-данные. Тег meta - одинарный
+            тег (пишется внутри тега head)</p>
+        <p>5) <span><big>body</big></span> - Тег, содержимое которого <b>доступно</b> для обозрения конечным
+            пользователям</p>
+        <p>6) <span><big>h1</big></span> - Тег для заголовков. В зависимости от числа в конце, определяется размер
+            текста в заголовке</p>
+        <p>7) <span><big>p</big></span> - Тег для создания текста-обзаца</p>
+        <p>8) <span><big>b</big></span> - Тег для <b>жирного</b> почеркивания текста</p>
+        <p>9) <span><big>strong</big></span> - Тег для <b>жирного</b> почеркивания текста</p>
+        <p>10) <span><big>em</big></span> - Тег для выделения текста <em>курсивом</em></p>
+        <p>11) <span><big>i</big></span> - Тег для выделения текста <em>курсивом</em></p>
+        <p>12) <span><big>strike</big></span> - Тег для выделения текста <strike>перечеркиванием</strike></p>
+        <p>13) <span><big>sub</big></span> - Тег для уменьшения текста и его помещения <b>ниже</b> основного ряда
+            (H<sub>2</sub>O)</p>
+        <p>14) <span><big>sup</big></span> - Тег для уменьшения текста и его помещения <b>выше</b> основного ряда
+            (а<sup>2</sup>)</p>
+        <p>15) <span><big>br</big></span> - Тег переноса строки. Не оставляет отступы между строк. Является одинарным
+        </p>
+        <p>16) <span><big>hr</big></span> - Тег, создающий горизонтальную линию. Является одинарным</p>
+        <p>17) <span><big>abbr</big></span> - Тег для обозначения аббревиатур (можно добавить атрибут title для
+            добавления обозначения к аббревиатуре при наведении курсора мыши)</p>
+        <p>18) <span><big>address</big></span> - Тег для обозначения адреса (текст выделяется <i>курсивом</i>)</p>
+        <p>19) <span><big>big</big></span> - Тег для <big>увеличения</big> текста</p>
+        <p>20) <span><big>small</big></span> - Тег для <small>уменьшения</small> текста</p>
+        <p>21) <span><big>pre</big></span> - Тег для отображения текста с сохранением всех отступов (<code>моноширный шрифт</code>)</p>
+        <p>22) <span><big>code</big></span> - Тег для обозначения кода (<code>моноширный шрифт</code>)</p>
+        <p>23) <span><big>ol</big></span> - Тег для создания <b>пронумерованного</b> списка. Элементы списка указываются
+            в тегах li</p>
+        <p>24) <span><big>ul</big></span> - Тег для создания <b>непронумерованного</b> списка. элементы списка
+            указываются в тегах li</p>
+        <p>25) <span><big>a</big></span> - Тег для создания ссылок (должен быть обязательный атрибут href)</p>
+        <p>26) <span><big>img</big></span> - Тег для работы с изображениями. Работает только с атрибутами. Является
+            одинармным.</p>
+        <p>27) <span><big>table</big></span> - Тег для создания таблиц. Может состоять из тегов thead, tbody, tfoot. Тег
+            tr служит для создания строк в таблице и может использоваться как в теге table, так и в его внутренних тегах
+            thead, tbody и tfoot (особой разницы нет, но правильнее использовать разделение создания таблицы на 3
+            части). Тег th создаёт в таблице столбец и используется внутри тега thead, и текст в столбце почеркивается
+            <b>жирным</b>. Тег td создаёт в таблице столбец и используется внутри тега tbody и tfoot и <b>не
+                почеркивается</b> жирным </p>
+        <p>28) <span><big>link</big></span> - Тег, позволяющий подключать css файлы, работает только с атрибутами, является одинармным, записывается только в теге head</p>
+        <p>29) <span><big>script</big></span> - Тег, позволяющий подключать java script файлы, работает только с атрибутами, является одинармным, рекомендуется ставить перед окончанием тега body</p>
+        <p>30) <span><big>div</big></span> - Тег, создающий блок, в котором можно будет подключать различные стили</p>
+        <p>31) <span><big>span</big></span> - Тег, выделяющий определенную часть кода, к которой можно будет обраться
+                через язык css через этот тег</p>
+        <p>32) <span><big>form</big></span> - Тег для собрания в себя других тегов, предназначенных для работы с
+            формочками:</p>
+        <ul>
+            <li><span>label</span> - Тег, создающий подпись для какого-либо поля</li>
+            <li><span>input</span> - Тег, используемый для создания интерактивных элементов управления в веб-формах для
+                получения данных от пользователя. Является одинармным тегом и имеет обязательный атрибут type</li>
+        </ul>
+        <p>31) <big></big></p>
+        <p>31) <big></big></p>
+
+
+
+        <!--АТРИБУТЫ!-->
+        <a name="Атрибуты"></a>
+        <h1 class="big_words">АТРИБУТЫ:</h1>
+        <h3>Тег <b><big>meta</big></b>:</h3>
+        <p>1) <span><big>charset</big></span> - Атрибут, устанавливающий кодировку</p>
+        <h3>Тег <b><big>table</big></b>:</h3>
+        <p>1) <span><big>border</big></span> - Атрибут, устанавливающий границы в таблице. Значением для атрибута
+            является число (количество пикселей в перегородке)</p>
+        <p>2) <span><big>width</big></span> - Атрибут, устанавливающий ширину таблицы в пикселях</p>
+        <p>3) <span><big>align</big></span> - Атрибут, устанавливающий текст в таблице (справа, слева, по центру)</p>
+        <h3>Тег <b><big>input</big></b>:</h3>
+        <p>1) <span><big>type</big></span> - Атрибут, устанавливающий тип поля</p>
+        <p>2) <span><big>placeholder</big></span> - Атрибут, устанавливающий подсказку в водимое поле</p>
+        <p>3) <span><big>value</big></span> - Атрибут, изначальный устанавливающий текст в поле</p>
+        <p>4) <span><big>maxlength</big></span> - Атрибут, устанавливающий ограничение на количество вводимых символов в
+            поле</p>
+        <p>5) <span><big>name</big></span> - Атрибут, устанавливающий функциональное название для поля</p>
+        <p>6) <span><big>id</big></span> - Уникальный идентификатор для какого-либо объекта</p>
+        <h3>Тег <b><big>label</big></b>:</h3>
+        <p>1) <span><big>for</big></span> - Атрибут, указывающий с каким инпут объектом работает подпись (label)</p>
+
+
+
+        <!--СТИЛИ CSS:!-->
+        <a name="СТИЛИ CSS"></a>
+        <h1 class="big_words">СТИЛИ CSS:</h1>
+        <p>1) <span><big>color</big></span> - Выбор цвета</p>
+        <p>2) <span><big>text-align</big></span> - Размещение текста</p>
+        <p>3) <span><big>font-size</big></span> - Размер текста</p>
+        <p>4) <span><big>font-style</big></span> - </p>
+        <p>5) <span><big>font-family</big></span> - Выбор шрифта</p>
+        <p>6) <span><big>text-transform</big></span> - Выбор капса</p>
+        <p>7) <span><big>word-spacing</big></span> - Расстояние между словами</p>
+        <p>8) <span><big>letter-spacing</big></span> - Расстояние между буквами</p>
+        <p>9) <span><big>line-height</big></span> - Расстояние между строками</p>
+        <p>10) <span><big>text-derorating</big></span> - Линия текста (под ним, над ним и тд.)</p>
+        <p>11) <span><big>cursor</big></span> - Состояние курсора при наведении</p>
+        <p>12) <span><big>float</big></span> - Позиционирование блоков. Способность поставить блоки на 1 линии</p>
+        <p>13) <span><big>padding</big></span> - Установка внутренних отступов блока</p>
+        <p>14) <span><big>margin</big></span> - Установка внешних отступов блока</p>
+        <p>15) <span><big>border</big></span> - Установка обводки</p>
+        <p>15) <span><big>background</big></span> - Установка цвета заднего фона</p>
+        <p>15)<span><big>width</big></span> - Установка ширины</p>
+        <p>15) <span><big>height</big></span> - Установка высоты</p>
+        <p>15) <span><big>transition-delay</big></span> - Стиль, задерживающий начало перехода. Секунды или милисекунды.
+        </p>
+        <p>15) <span><big>transition-property</big></span> - Стиль, в который записывается объект, которому нужен
+            плавный переход</p>
+        <p>15) <span><big>transition-duration</big> </span>- Стиль, в который записывается в секундах или милисекундах
+            скорость перехода</p>
+        <p>15) <span><big>transition</big></span> - Сокращение использования предыдущих стилей, например:
+            <code>transition: background 0.3s ease 1s</code></p>
+        <p>15) <span><big>transform</big></span> - Стиль, перемещающий объекты в пространстве, функции тега:</p>
+        <ul>
+            <li><span><big>translate</big></span> - Перемещение объекта по осям(первое значение для X, второе для Y)</p>
+            <li><span><big>perspective</big></span> - Определяет расcтояние между плоскостью z = 0 и пользователем для того чтобы придать 3D-позиционируемому элементу эффект переспективы</p></li>
+            <li><span><big>translate3d</big></span> - Объеденение функций translateX, translateY, translateZ в одну функцию(<code>translate3d(x, y, z)</code>)</p></li>
+            <li><span><big>scale</big></span> - Увеличение объекта</p></li>
+            <li><span><big>scale3d</big></span> - Увеличение объекта</p></li>
+            <li><span><big>skew</big></span> - Наклон элемента</p></li>
+            <li><span><big>rotate</big></span> - Поворот объекта</p></li>
+            <li><span><big>rotate</big></span> - Поворот объекта</p></li>
+            <li><span><big></big></span> - </p></li>
+        </ul>
+
+
+
+        <br><br>
+        <p>Нашли ошибку? Распишите её здесь! Это поможет сайту развиваться</p>
+        <a name="Вопросы_ко_мне"></a>
+        <form action="/response" id="responseForm">
+            <textarea id="textArea" name="responseText" placeholder="Сообщение не должно превышать по длине 1000 символов" maxlength="1000" cols="80" rows="11"></textarea><br>
+            <input type="submit" id="textAreaButton" class="send"></input>
+        </form>
+    </div>
+
+
+    <div id="footer">
+        <div id="mail">
+            <p class="footerLabel" >СВЯЗЬ:</p>
+            <a href="mailto:akmalhushvahtov07@mail.ru" style="font-size: 25px;color: #ffffff;">akmalhushvahtov07@mail.ru</a>
+        </div>
+        
+
+        <div id="messangersIcons">
+            <p class="footerLabel">МЫ В:</p>
+            <img class="messangersIconsImgs" src="/images/Ватсапп_иконка.png">
+            - Whatsapp<br><br>
+            <img class="messangersIconsImgs" src="/images/Телеграмм_иконка.png">
+             - Telegramm<br><br>
+            <img class="messangersIconsImgs" src="/images/Макс_иконка.png">
+             - Max
+        </div>
+
+        <div id="address">
+            <p class="footerLabel" >АДРЕС ОРГАНИЗАЦИИ:</p>
+            <p>Г. Чехов, у. Фиски, д. 34, кв. Андрея</p>
+        </div>
+
+    </div>
+
+
+    <script src="js/first_project.js"></script>
+</body>
+
+</html>

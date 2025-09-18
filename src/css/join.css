@@ -1,0 +1,77 @@
+#containerFlexDiv {
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    margin: 10% 0;
+    justify-content: space-around;
+}
+#joinForm {
+    width: 400px;
+    border: none;
+    text-align: center;
+    padding: 10px;
+    /* position: relative;
+    right: -700px;
+    bottom: -250px; */
+    font-size: 20px;
+    background: linear-gradient(#57008a, #b98fd1);    border-radius: 7px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 10px;
+    color: #ffffff;
+}
+.inputs {
+    height: 30px;
+    border-radius: 30px;
+    padding: 5px 0px 5px 10px;
+    background-color: #000;
+    border: none;
+    width: 95%;
+    color: #fff;
+}
+
+body, html {
+    background: linear-gradient(#000000, #2b2a2a);
+    font-family: "Montserrat", sans-serif;
+    font-weight: 450;
+    height: 100%;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+.send {
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    border-radius: 15px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 450;
+    margin-bottom: 50px;
+    position: relative;
+    bottom: -25px;
+}
+.send:hover {
+    background-color: #3b3636;
+    cursor: pointer;
+}
+#error {
+    color: #000;
+    border-right: 10px solid #d33636;
+    border-left: 10px solid #d33636;
+    padding: 50px 5px 0px 5px;
+    width: 500px;
+    height: 100px;
+    /* position: relative;
+    top: -100px;
+    right: -85px; */
+    margin: auto auto;
+    background: #c77575;
+    text-align: center;
+    opacity: 0;
+    font-size: 20px;
+}
+#mailFormHeader {
+    font-size: 30px;
+}

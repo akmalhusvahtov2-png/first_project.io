@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/css/user_page.css">
+    <link rel="icon" href="/images/Иконка_сайта.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="greyScreen" hidden></div>
+
+    <!-- <div id="navigationPanel">
+        <div id="navigationButtonsFlexDiv">
+            <a href="/"></a>
+            <a href="/"></a>
+        </div>
+    </div> -->
+
+    <div id="navUserPageFlex">
+        <a href="/" id="backButton" class="button">Назад</a>
+        <form action="/search" id="searchForm">
+            <input type="text" name="searchInput" id="searchInput" placeholder="Поиск по имени">
+            <input type="submit" id="searchButton" class="button" value="Найти">
+        </form>
+    </div>
+
+    <div id="containerDiv">
+
+        <img src="/images/Фото_профиля_по_дефолту.png" id="userImg" alt="">
+
+        <div id="userInfoDiv">
+            <h1><span class="labelSpan">Имя: </span><span id="name"></span></h1><br>
+            <h1><span class="labelSpan">ID: </span><%= id %></h1><br>
+            <h1><span class="labelSpan">Тел: </span><%= phone %></h1><br>
+            <h1><span class="labelSpan">Почта: </span><%= mail %></h1><br>
+            <h1><span class="labelSpan">Время регистрации: </span><%= day %> <%= month %> <%= year %></h1><br>
+            <form id="imageForm" action="/image" method="post" enctype="multipart/form-data">
+                <label id="inputFile">
+                    <input type="file" id="imgAddDiv" name="image" multiple accept="image/*">
+                    <span>Добавить фото</span>
+                    <input type="submit" id="sendButton" value="Подтвердить"/>
+                </label>
+            </form>
+            <!-- <a id="deleteUserButton" class="button">Удалить аккаунт</a>
+            <a id="updateUserButton" class="button">Изменить профиль</a>
+            <a id="leaveFromAccountButton" class="button">Выйти</a> -->
+        </div>
+
+    </div>
+
+    <div id="buttonsFlexDiv">
+        <a id="deleteUserButton" class="button">Удалить аккаунт</a>
+        <a id="updateUserButton" class="button">Изменить профиль</a>
+        <a id="leaveFromAccountButton" class="button">Выйти</a>
+    </div>
+
+    <div id="error"></div>
+
+    
+
+    <div id="deletePanel" hidden>
+        <form id="deleteForm">
+
+            <h2>Удаление аккаунта</h2>
+
+            <label for="chekPasswordForDelete">Пароль:</label><br><br>
+            <input name="chekPasswordForDelete" class="inputs" id="inputDelete" type="password"><br>
+
+            <input type="submit" name="submit" class="buttonExtra" id="buttonDelete" value="Подтвердить" disabled>
+            <input type="button" class="buttonExtra" id="buttonCancelDelete" value="Отмена"><br>
+        </form> 
+    </div>
+
+    <div id="updatePanel" hidden>
+        <form id="updateForm">
+
+            <h2>Изменение даннных</h2>
+
+            <label for="chekPasswordForUpdate">Подтвердите пароль</label><br><br>
+            <input name="chekPasswordForUpdate" class="inputs" id="inputUpdate" type="password"><br>
+
+            <label for="nameToUpdate">Имя</label><br><br>
+            <input id="nameInput" name="nameToUpdate" class="inputs" type="text" value="<%= name %>"><br>
+
+            <label for="mailToUpdate">Почта</label><br><br>
+            <input name="mailToUpdate" class="inputs" type="text" value="<%= mail %>"><br>
+
+            <label for="phoneToUpdate">Телефон</label><br><br>
+            <input name="phoneToUpdate" class="inputs" type="number" value="<%= phone %>"><br>
+
+            <input type="submit" name="submit" class="buttonExtra" id="buttonUpdate" value="Отправить" disabled>
+            <input type="button" class="buttonExtra" id="buttonCancelUpdate" value="Отмена"><br>
+
+        </form> 
+    </div>
+
+    <!-- <hr id="mainHr"> -->
+
+    <script src="/js/user_page.js"></script>
+    <script src="/js/user_delete.js"></script>
+    <script src="/js/user_update.js"></script>
+    <script src="/js/user_leave.js"></script>
+</body>
+</html>

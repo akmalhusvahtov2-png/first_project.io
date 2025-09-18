@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+body, html {
+    background: linear-gradient(#272727, #2b2a2a);
+    height: 100%;
+    color: white;
+    overflow: hidden;
+    font-family: Montserrat;
+}
+.button {
+    padding: 20px 30px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.buttonExtra {
+    padding: 10px 15px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 15px;
+}
+#deleteUserButton {
+    background: linear-gradient(to bottom right, rgb(255, 0, 0), rgb(116, 2, 2));
+    color: #ffffff;
+    cursor: pointer;
+    transition: all 500ms ease;
+}
+#deleteUserButton:hover {
+    background: linear-gradient(to bottom right, rgb(253, 96, 96), rgb(139, 46, 46));
+    transition-duration: 0.5s;
+}
+#updateUserButton {
+    background: linear-gradient(to bottom right, blue, rgb(8, 0, 126));
+    color: #ffffff;
+    cursor: pointer;
+    transition: all 500ms ease;
+}
+#updateUserButton:hover {
+    background: linear-gradient(to bottom right, rgb(78, 78, 255), rgb(36, 30, 121));
+}
+#leaveFromAccountButton {
+    background: linear-gradient(to bottom right, rgb(255, 166, 0), rgb(122, 114, 0));
+    color: #ffffff;
+    cursor: pointer;
+    transition: all 500ms ease;
+}
+#leaveFromAccountButton:hover {
+    background: linear-gradient(to bottom right, rgb(255, 198, 92), rgb(138, 131, 45));
+}
+#deletePanel {
+    padding: 20px 30px;
+    width: 20%;
+    border: 1px solid rgb(43, 43, 43);
+    border-radius: 25px;
+    box-shadow: 2px 1px 1px rgb(43, 43, 43);
+    background-color: rgb(255, 255, 255);
+    /* font-size: 30px; */
+    text-align: center;
+    position: fixed;
+    margin-inline: auto;
+    inset-inline: 0;
+    inset-block-start: 50%;
+    transform: translateY(-50%);
+    color: black;
+}
+#updatePanel {
+    padding: 30px;
+    width: 20%;
+    border: 1px solid rgb(43, 43, 43);
+    border-radius: 25px;
+    box-shadow: 2px 1px 1px rgb(43, 43, 43);
+    background-color: rgb(255, 255, 255);
+    /* font-size: 30px; */
+    text-align: center;
+    position: fixed;
+    margin-inline: auto;
+    inset-inline: 0;
+    inset-block-start: 30%;
+    transform: translateY(-10%);
+    color: black;
+}
+.inputs {
+    padding: 7px 10px;
+    width: 60%;
+    border: 1px solid gray;
+    border-radius: 15px;
+    box-shadow: 2px 1px 1px gray;
+    margin-bottom: 20px;
+}
+#buttonUpdate {
+    margin-top: 20px;
+    margin-right: 20px;
+    /* background-color: orange; */
+}
+#buttonDelete {
+    margin-top: 20px;
+    margin-right: 20px;
+    /* background-color: red;
+    color: white; */
+}
+#greyScreen {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 50%;
+    margin: 0;
+}
+h2 {
+    margin-bottom: 20px;
+}
+label {
+    font-size: 20px;
+}
+.labelSpan {
+    color: purple;
+}
+#navUserPageFlex {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2%;
+}
+#backButton {
+    background: linear-gradient(to bottom right, #9739ce, #572077);
+    color: #ffffff;
+    cursor: pointer;
+    transition: all 500ms ease;
+}
+#backButton:hover {
+    background: linear-gradient(to bottom right, #aa5ad8, #63347e);
+    transition-duration: 0.5s;
+}
+#searchInput {
+    padding: 20px 30px;
+    color: #ffffff;
+    border-radius: 20px;
+    font-size: 20px;
+    background-color: #000;
+    border: 1px solid #9739ce;
+}
+#searchButton {
+    background-color: #000;
+    color: #ffffff;
+    cursor: pointer;
+    transition: all 500ms ease;
+    border: 1px solid #9739ce;
+    margin-left: 20px;
+}
+#searchButton:hover {
+    background-color: #4e4e4e;
+    transition-duration: 0.5s;
+}
+#containerDiv {
+    display: flex;
+    width: 60%;
+    padding: 2% 5%;
+    justify-content: space-between;
+    margin: 2% 10% 5% 10%;
+    border-bottom: 1px solid #9739ce;
+}
+#buttonsFlexDiv {
+    display: flex;
+    width: 60%;
+    justify-content: space-around;
+    margin: 7% 18%;
+}
+#userImg {
+    height: 400px;
+    width: 400px;
+    background-color: rgb(185, 185, 185);
+    border: 4mm outset #9739ce;
+}
+#inputFile {
+    position: relative;
+    display: inline-block;
+}
+#inputFile span {
+    position: relative;
+	display: inline-block;
+	cursor: pointer;
+    padding: 15px 20px;
+    border-radius: 10px;
+    border: none;
+    font-size: 20px;
+    font-weight: 700;
+    color: #ffffff;
+    background: linear-gradient(to bottom right, rgb(255, 123, 0), rgb(168, 85, 6));
+    cursor: pointer;
+    text-transform: uppercase;
+}
+#inputFile span:hover {
+    background: linear-gradient(to bottom right, rgb(252, 145, 45), rgb(172, 103, 40))
+}
+#inputFile input[type=file] {
+    position: absolute;
+	z-index: -1;
+	opacity: 0;
+	display: block;
+	width: 0;
+	height: 0;
+}
+#sendButton {
+    padding: 15px 20px;
+    border-radius: 10px;
+    border: none;
+    font-size: 20px;
+    font-weight: 700;
+    color: #ffffff;
+    background: linear-gradient(to bottom right, rgb(21, 153, 3), rgb(12, 90, 1));
+    cursor: pointer;
+    text-transform: uppercase;
+}
+#sendButton:hover {
+    background: linear-gradient(to bottom right, rgb(70, 160, 58), rgb(43, 99, 36))
+}
+/* #imgAddDiv {
+    padding: 15px 20px;
+    border-radius: 10px;
+    border: none;
+    font-size: 20px;
+    font-weight: 700;
+    color: #ffffff;
+    background: linear-gradient(to bottom right, rgb(255, 123, 0), rgb(168, 85, 6));
+    cursor: pointer;
+    text-transform: uppercase;
+}
+#imgAddDiv:hover {
+    background: linear-gradient(to bottom right, rgb(252, 145, 45), rgb(172, 103, 40))
+} */
+#userInfoDiv {
+    margin-top: 4%;
+}
+/* #imgAddDiv::file-selector-button {
+    display: none;
+}
+
+Скрываем текст "файл не выбран"
+#imgAddDiv::-webkit-file-upload-button,
+#imgAddDiv::before,
+#imgAddDiv::after {
+    display: none;
+} */
+/* НИЖЕ ЭТО СКРЫТИЕ СТРЕЛОК УВЕЛИЧЕНИЯ/УМЕНЬШЕНИЯ ЧИСЛА В TYPE='NUMBER' */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+#error {
+    color: #000;
+    border-right: 10px solid #d33636;
+    border-left: 10px solid #d33636;
+    padding: 50px 5px 0px 5px;
+    width: 500px;
+    height: 100px;
+    position: fixed;
+    bottom: 420px;
+    left: 50px;
+    background: #c77575;
+    text-align: center;
+    opacity: 0;
+    font-size: 20px;
+    z-index: 999;
+}
+#mainHr {
+    width: 70%;
+    background-color: #9739ce;
+    margin-left: auto;
+    margin-right: 0;
+}

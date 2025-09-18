@@ -1,0 +1,85 @@
+<!Doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/registration.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="icon" href="/images/Иконка_сайта.png">
+</head>
+
+<body>
+
+    <div id="containerFlexDiv">
+
+        <div id="error"></div>
+
+        <form id="myForm" action="/user" method="post">
+            <p id='main_form_header'>ЗАРЕГЕСТРИРУЙТЕСЬ НА САЙТЕ</p><br>
+            <label for="name">Введите ваше имя</label><br>
+            <input type="text" class="inputs" name="name" id="name" placeholder="Имя"><br><br><br>
+            <label for="mail">Адрес электронной почты</label><br>
+            <input type="mail" class="inputs"  name="mail" id="mail" placeholder="Ваша_почта@mail.ru"><br><br><br>
+            <label for="phone">Введите номер телефона</label><br>
+            <input type="number" class="inputs"  name="phone" id="phone" placeholder="+7 *** ***-**-**"><br><br><br>
+            <label for="password">Придумайте <span id="help_password">пароль</span></label><br>
+            <input type="password" class="inputs"  name="password" id="password" placeholder="8 элементов"><br><br><br>
+            <label for="chek-password">Повторите пароль</label><br>
+            <input type="password" class="inputs"  name="check_password" id="check-password" placeholder="8 элементов"><br><br><br>
+            <input type="submit" name="submit" class="send" id="btn" value="Отправить">
+        </form>
+        
+    </div>
+
+    
+
+<script>
+//     // данные для отправки
+// const myForm = document.getElementById("myForm");
+// myForm.addEventListener("submit", async (e)=>{
+//     e.preventDefault();
+//     // данные для отправки
+//     const name = myForm.name.value;
+//     const mail = myForm.mail.value;
+//     const phone = myForm.phone.value;
+//     const password = myForm.password.value;
+//     const check_password = myForm.check_password.value;
+
+//     if(name == '' || mail == '' || phone == '' || password == '' || check_password == '')
+//         error = 'Все поля должны быть заполнены!';
+//     else if(name.length < 2 || name.length > 290) 
+//         error = 'Имя должно быть в пределах 2-20 символов!';
+//     else if(mail.split('&').length == 1 & mail.split('.').length == 1)
+//         error = 'В адресе электронной почты должны содержаться символы "@" и "."!';
+//     else if(password.length != 8)
+//         error = 'Пароль должен содержать 8 символов';
+//     else if(check_password.length != 8)
+//         error = 'Повторный пароль должен содержать 8 символов!';
+//     else if(check_password != password)
+//         error = 'Пароли должны совпадать!';
+
+//     if(error != '') {
+//         document.getElementById('error').innerHTML = error;
+//         document.getElementById('error').style.opacity = 1;
+//     } else {
+//         alert('Регистрация прошла успешно!');
+//         document.getElementById('error').style.opacity = 0;
+//     }
+//     // return false;
+
+ 
+//     const response = await fetch("/user", { 
+//               method: "POST", 
+//               headers: { "Content-Type": "application/json" },
+//               body: JSON.stringify({name: name, mail: mail, phone: phone, password: password,})
+//     });
+//     // получаем присланный объект в формате json
+//     const data = await response.json();
+//     console.log(data.message);
+// });
+</script>
+
+    <script src="js/registration.js"></script>
+</body>

@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+#containerFlexDiv {
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    margin: 5% 0;
+    justify-content: space-around;
+}
+#myForm {
+    width: 400px;
+    border: none;
+    text-align: center;
+    padding: 10px;
+    /* margin: 5% auto; */
+    background: linear-gradient(#57008a, #b98fd1);
+    font-size: 20px;
+    border-radius: 7px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.inputs {
+    height: 30px;
+    border-radius: 30px;
+    padding: 5px 0px 5px 10px;
+    background-color: #000;
+    border: none;
+    width: 95%;
+    color: #fff;
+}
+body, html {
+    background: linear-gradient(#272727, #2b2a2a);
+    font-family: "Montserrat", sans-serif;
+    font-weight: 450;
+    overflow: hidden;
+    height: 100%;
+}
+.send {
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    border-radius: 15px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 450;
+}
+.send:hover {
+    background-color: #3b3636;
+    cursor: pointer;
+}
+/* НИЖЕ ЭТО СКРЫТИЕ СТРЕЛОК УВЕЛИЧЕНИЯ/УМЕНЬШЕНИЯ ЧИСЛА В TYPE='NUMBER' */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+#error {
+    color: #000;
+    border-right: 10px solid #d33636;
+    border-left: 10px solid #d33636;
+    padding: 50px 5px 0px 5px;
+    width: 500px;
+    height: 100px;
+    /* position: fixed; */
+    /* top: -400px;
+    right: -85px; */
+    margin: auto auto;
+    background: #c77575;
+    text-align: center;
+    opacity: 0;
+    font-size: 20px;
+}
+#main_form_header {
+    font-size: 30px;
+    color: #ffffff;
+}
+label {
+    color: #ffffff;
+}

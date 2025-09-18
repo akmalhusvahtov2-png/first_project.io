@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/css/searched.css">
+    <link rel="icon" href="/images/Иконка_сайта.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="navUserPageFlex">
+        <form id="backButtonForm" action="/backButtonFromSearch">
+            <input type="submit" id="backButton" class="button" value="Назад">
+        </form>
+        
+        <form action="/search" id="searchForm">
+            <input type="text" name="searchInput" id="searchInput" placeholder="Поиск по имени" disabled>
+            <input type="submit" id="searchButton" class="button" value="Найти" disabled>
+        </form>
+    </div>
+
+    <div id="containerDiv">
+
+        <img src="/images/<%= image %>" id="userImg" alt="">
+
+        <div id="userInfoDiv">
+            <h1><span class="labelSpan">Имя: </span><span id="name"><%= searchedName %></span></h1><br>
+            <h1><span class="labelSpan">ID: </span><%= id %></h1><br>
+            <h1><span class="labelSpan">Время регистрации: </span><%= day %> <%= month %> <%= year %></h1><br>
+        </div>
+
+    </div>
+
+    <script src="/js/searched.js"></script>
+    
+</body>
+</html>
